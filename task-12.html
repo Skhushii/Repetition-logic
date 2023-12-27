@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task-12</title>
+</head>
+<body>
+    <script>
+        let angle1 = parseFloat(prompt("Enter the first angle of the triangle (in degrees):"));
+let angle2 = parseFloat(prompt("Enter the second angle of the triangle (in degrees):"));
+let angle3 = parseFloat(prompt("Enter the third angle of the triangle (in degrees):"));
+
+let sum = angle1 + angle2 + angle3;
+
+if (sum === 180 && angle1 > 0 && angle2 > 0 && angle3 > 0) {
+    alert("The triangle is valid.");
+} else {
+    alert("The triangle is not valid.");
+}
+
+    </script>
+</body>
+</html>

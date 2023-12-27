@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task-6</title>
+</head>
+<body>
+    <script>
+        let physics = parseInt(prompt("Enter marks for Physics:"));
+let chemistry = parseInt(prompt("Enter marks for Chemistry:"));
+let biology = parseInt(prompt("Enter marks for Biology:"));
+let mathematics = parseInt(prompt("Enter marks for Mathematics:"));
+let computer = parseInt(prompt("Enter marks for Computer:"));
+
+// Calculate total marks and percentage
+let total = physics + chemistry + biology + mathematics + computer;
+let percentage = (total / 500) * 100;
+
+// Determine grade
+let grade;
+if (percentage >= 90) {
+    grade = "A";
+} else if (percentage >= 80) {
+    grade = "B";
+} else if (percentage >= 70) {
+    grade = "C";
+} else if (percentage >= 60) {
+    grade = "D";
+} else if (percentage >= 50) {
+    grade = "E";
+} else {
+    grade = "F";
+}
+
+alert(`Your percentage is: ${percentage}% and your grade is: ${grade}`);
+    </script>
+</body>
+</html>
